@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeCasadores;
+package dev.java10x.CadastroDeCasadores.Cacadores;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

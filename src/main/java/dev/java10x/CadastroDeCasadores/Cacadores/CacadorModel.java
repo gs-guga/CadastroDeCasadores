@@ -1,6 +1,7 @@
-package dev.java10x.CadastroDeCasadores;
+package dev.java10x.CadastroDeCasadores.Cacadores;
 
 
+import dev.java10x.CadastroDeCasadores.Missoes.MissoesModel;
 import jakarta.persistence.*;
 
 
@@ -14,6 +15,10 @@ public class CacadorModel {
      private String nome;
      private String email;
      private int idade;
+
+     @ManyToOne
+     @JoinColumn(name = "missoes_id")
+     private MissoesModel missoes;
 
     public CacadorModel() {
     }
